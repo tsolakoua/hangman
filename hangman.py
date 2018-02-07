@@ -21,7 +21,7 @@ def play_game(word, table, lives):
 				if "_" not in table:
 					print(word)
 					print("You won!")
-					break
+					return
 			else: 
 				missed_letter = missed_letter + 1
 				if missed_letter == len(word):
